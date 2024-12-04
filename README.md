@@ -2,4 +2,4 @@
 
 This is a custom README file. See the full details below.
 
-[View full README content](documentations.ipynb)
+[View full README content](documentation.ipynb)
