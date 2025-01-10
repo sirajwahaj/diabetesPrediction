@@ -140,12 +140,12 @@ class DecisionTree():
 
 
 diabetes = pd.read_csv('diabetes.csv')
-diabetes = diabetes.drop(columns=['BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age'])
+diabetes = diabetes.drop(columns=['BloodPressure', 'SkinThickness'])
 
 X = diabetes.iloc[:,:-1].values
 y = diabetes.iloc[:,-1].values
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=41)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=41)
 
 decisiontree =  DecisionTree()
 decisiontree.fit(X_train,y_train)
